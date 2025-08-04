@@ -14,7 +14,7 @@ I built this website using HTML, CSS, and JavaScript.
 
 ## How to Use
 - Open the `index.html` file in any web browser to view the website locally.  
-- Or, if hosted on GitHub Pages, visit: [)
+- Or, if hosted on GitHub Pages, visit: [https://github.com/Md-Ahmady/my-potfolio]
 
 ## Technologies Used
 - HTML5  
