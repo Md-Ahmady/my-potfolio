@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* javascript section */
+.nav-links a.active {
+  color: #077b32;
+  font-weight: 700;
+  border-bottom: 2px solid #077b32;
+}
+
+/* HTML section */
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: black;
+    z-index: 1000;
+}
+
+
+.about {
+  padding: 4rem 2rem;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.about ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+ 
+.skills {
+  background: #000;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.skill label {
+  font-weight: 500;
+}
+
+.progress-bar {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.progress {
+  background: #07c25f;
+  height: 100%;
+  line-height: 25px;
+  color: black;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.projects {
+  background: #111;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,255,100,0.2);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,255,100,0.4);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  color: lightgreen;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.contact {
+  background: black;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: green;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid green;
+}
+
+form button {
+  padding: 0.8rem; 
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: backgroun 0.3s;
+}
+
+form button:hover {
+  background: white;
+  color: green;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: green;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: green;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #077b32;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Hero Section */
+section.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: green;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Image Styling */
+#andaz {
+    width: 250px;
+    height: 250px;
+    border: 3px solid rgb(102, 240, 102);
+    border-radius: 10%;
+    box-shadow: 0 0 20px #077b32;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+}
+
+#andaz img {
+    position: absolute;
+    top: -20%; 
+    left: 0;
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    transition: top 0.4s ease-in-out;
+}
+
+/* On hover: slide image fully down */
+#andaz:hover img {
+    top: 0;
+}
+
+
+
+/* Content Section (Right of Image) */
+.content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.typewriter p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.typewriter-text {
+    font-weight: bold;
+    color: lightgreen;
+    padding-left: 5px;
+}
+
+.social {
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social a {
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #077b32;
+}
+
+.btn button {
+    padding: 0.7rem 1.5rem;
+    background: #077b32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn button:hover {
+    background-color: white;
+    color: #077b32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none; /* Add JS toggle if needed */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+/* Modal Background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Box */
+.modal-content {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Form Inputs */
+#hireForm input, #hireForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#hireForm button {
+  background: green;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hireForm button:hover {
+  background: white;
+  color: green;
+}
+
+/* social media */
+.social a {
+  font-size: 1.2rem;
+  color: white;
+  transition: color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: #077b32;
+  transform: scale(1.1);
+}

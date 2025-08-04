@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Sakib Portfolio</title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Md Sakib <span>Ahmad</span>
+            </div>
+         <div class="nav-links">
+           <a href="#home">Home</a>
+           <a href="#about">About</a>
+           <a href="#skills">Skills</a>
+           <a href="#projects">Projects</a> 
+           <a href="#contact">Contact</a>
+         </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+       <section class="hero" id="home">
+          <h1>Hey, I'm <span>Ahmad</span></h1>
+             <div class="main-container">
+                <div id="andaz">
+                  <img src="andaz.jpg.jpg" alt="Md Sakib Ahmad">
+          </div>
+               <div class="content">
+         <div class="typewriter">
+             <p>I'm a <span class="typewriter-text">Web Developer</span></p>
+             <p>Lynn Fisher is a digital illustrator, web developer, and UI/UX designer. Her portfolio changes yearly, which is a major feature that pique
+         </div>
+
+    <!-- Social MEdia Section -->    
+         <div class="social">
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="https://www.linkedin.com/in/md-sakib-ahmad-1504b530a/"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <!-- Resume Icon -->
+                <a href="https://drive.google.com/file/d/1GpgS19fy7naCZ9tQAcfp7assqHc7i01w/view?usp=sharing" target="_blank" title="Download Resume">
+                  <i class="fa-solid fa-file-arrow-down"></i>Resume
+                </a>
+         </div>
+
+ <!-- Hire Section -->     
+         <div class="btn">
+             <button>Hire Me</button>
+ <!-- Hire Me Modal -->
+        <div id="hireModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Hire Me</h2>
+            <form id="hireForm">
+              <input type="text" placeholder="Your Name" required>
+              <input type="text" placeholder="Company Name" required>
+              <input type="text" placeholder="Offer Amount (INR)" required>
+              <input type="text" placeholder="Location" required>
+              <textarea placeholder="What will you provide?" rows="4" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+ </div>
+</div>
+</section>
+
+    <!-- Abaout Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+                 <p>Hello! I'm Md Sakib Ahmad, a passionate web developer with a love for clean UI and responsive design. I enjoy solving problems and building efficient, elegant code.</p>
+               <ul>
+                 <li><strong>Education:</strong> B.Tech in Computer Science</li>
+                 <li><strong>Experience:</strong> 4 Year in Fornt-End Developer</li>
+                 <li><strong>Hobbies:</strong> Coding, Reading, Gaming</li>
+               </ul>
+        </section>
+
+    <!-- Skill Section -->   
+        <section id="skills" class="skills">
+          <h2>My Skills</h2>
+            <div class="skill">
+              <label>HTML</label>
+              <div class="progress-bar">
+              <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+           
+           <div class="skill">
+             <label>CSS</label>
+             <div class="progress-bar">
+               <div class="progress" style="width: 85%;">85%</div>
+             </div>
+           </div>
+       
+             <div class="skill">
+               <label>JavaScript</label>
+               <div class="progress-bar">
+                 <div class="progress" style="width: 75%;">75%</div>
+               </div>
+             </div>
+      
+              <div class="skill">
+                <label>MongoDB</label>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 65%;">65%</div>
+                </div>
+              </div>
+     </section>
+
+    <!--Project Section-->
+     <section id="projects" class="projects">
+         <h2>My Projects</h2>
+         
+         <div class="project-container">
+           
+              <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+              </div>
+          
+               <div class="project-card">
+                 <img src="project2.jpg" alt="Project 2">
+                 <h3>Weather App</h3>
+                 <p>Simple weather app using OpenWeather API with live temperature display.</p>
+               </div>
+             
+              <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>To-Do List</h3>
+                <p>Basic To-Do List app to add, delete, and mark tasks using JavaScript.</p>
+              </div>
+
+          </div>
+        </section>
+        
+    <!--Contact Section-->  
+      <section id="contact" class="contact">
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
